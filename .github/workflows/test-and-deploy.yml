@@ -31,5 +31,5 @@ jobs:
     steps:
       - name: Trigger deploy hook
         run: |
-          curl -X ${{ secrets.RENDER_DEPLOY_HOOK }} 
+          curl -X POST ${{ secrets.RENDER_DEPLOY_HOOK }} 
             
