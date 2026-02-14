@@ -6,7 +6,9 @@ app.get('/', (req, res) => {
   res.send('Hello World!');
 });
 
-
+app.get('/123', (req, res) => {
+  res.send('Hello World! Your id is 123');
+});
 app.get('/:id', (req, res) => {
   res.send(`Hello World! Your id is ${req.params.id}`);
 });
